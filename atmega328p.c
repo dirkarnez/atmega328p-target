@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-void convertUnsignedCharToHexString(unsigned char value, char* hexString)
+void convertUnsignedCharToHexString(unsigned char value, unsigned char* hexString)
 {
     static const char digits[] = "0123456789abcdef";
     hexString[0] = digits[(value >> 4) & 0x0F];
